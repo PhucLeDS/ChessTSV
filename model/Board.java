@@ -1,6 +1,6 @@
-package src.model;
+package model;
 
-import src.pieces.*;
+import pieces.*;
 import java.awt.Point;
 
 public class Board {
@@ -89,10 +89,12 @@ public class Board {
                     if (originalPiece instanceof Pawn) {
                         Pawn originalPawn = (Pawn) originalPiece;
                         Pawn newPawn = new Pawn(originalPawn.getColor(), newPos);
+                        newPawn.setHasMoved(originalPawn.hasMoved());
                         copiedPiece = newPawn;
                     } else if (originalPiece instanceof Rook) {
                         Rook originalRook = (Rook) originalPiece;
                         Rook newRook = new Rook(originalRook.getColor(), newPos);
+                        newRook.setHasMoved(originalRook.hasMoved());
                         copiedPiece = newRook;
                     } else if (originalPiece instanceof Knight) {
                         copiedPiece = new Knight(originalPiece.getColor(), newPos);
@@ -103,6 +105,7 @@ public class Board {
                     } else if (originalPiece instanceof King) {
                         King originalKing = (King) originalPiece;
                         King newKing = new King(originalKing.getColor(), newPos);
+                        newKing.setHasMoved(originalKing.hasMoved()); // For castling
                         copiedPiece = newKing;
                     }
                     newBoard.board[i][j] = copiedPiece;

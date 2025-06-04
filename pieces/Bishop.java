@@ -1,7 +1,7 @@
-package src.pieces;
+package pieces;
 
-import src.model.Board;
-import src.model.Piece;
+import model.Board;
+import model.Piece;
 import java.awt.Point;
 
 public class Bishop extends Piece {
@@ -11,11 +11,35 @@ public class Bishop extends Piece {
 
     @Override
     public boolean isValidMove(Point newPosition, Board board) {
-        return false;
+        int dx = newPosition.x - getPosition().x;
+        int dy = newPosition.y - getPosition().y;
+
+        // Bishop moves diagonally
+        if (Math.abs(dx) != Math.abs(dy)) {
+            return false; // Not a diagonal move
+        }
+
+        // Check for obstructions
+        int stepX = (dx > 0) ? 1 : -1;
+        int stepY = (dy > 0) ? 1 : -1;
+
+        int currentX = getPosition().x + stepX;
+        int currentY = getPosition().y + stepY;
+
+        while (currentX != newPosition.x || currentY != newPosition.y) {
+            if (board.getPiece(new Point(currentX, currentY)) != null) {
+                return false; // Obstruction
+            }
+            currentX += stepX;
+            currentY += stepY;
+        }
+
+        Piece pieceAtNewPos = board.getPiece(newPosition);
+        return pieceAtNewPos == null || pieceAtNewPos.getColor() != getColor();
     }
 
     @Override
     public String getSymbol() {
-        return null;
+        return getColor() == Color.WHITE ? "B" : "b";
     }
 }
