@@ -2,7 +2,7 @@
 This is an attempt to recreate the classic Chess game, complete with all standard pieces, rules, and a functional user interface.
 It serves as the final project for our Object-Oriented Programming course at HCMIU-VN.
 
-Here is our [Report](link) - Temporarily unavailable
+Here is our [Report](link)
 
 # Dependencies
 - Java Development Kit 21 or above
@@ -33,4 +33,4 @@ java -jar ChessTSV.jar
 git clone https://github.com/PhucLeDS/ChessTSV
 ```
 * ***Recommended***: Use VSCode to build
-* Main class: To be determined later
+* Main class: Main.java
