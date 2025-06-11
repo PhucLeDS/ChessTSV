@@ -2,7 +2,7 @@
 This is an attempt to recreate the classic Chess game, complete with all standard pieces, rules, and a functional user interface.
 It serves as the final project for our Object-Oriented Programming course at HCMIU-VN.
 
-Here is our [Report](link)
+Here is our [Report](https://docs.google.com/document/d/1QzTgx2QGF_m4gBtAkok-nsfzEH0ybJb-/edit?fbclid=IwY2xjawK2cFZleHRuA2FlbQIxMABicmlkETFiMGd1bnB3c0RsRjRIbGlHAR4wb-GhePS9_MavsSQ3yi2ZG-tFtzDnd7XH0Ht2qYpoqI6lYaotdKK-UNJ8OA_aem_N4QqjuFNrGoMQ1wP9IulvA)
 
 # Dependencies
 - Java Development Kit 21 or above
