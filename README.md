@@ -12,12 +12,6 @@ Download the latest release and extract it, which contains 3 things:
 * Resources
 * ChessTSV.jar
 
-# Run using executable script:
-1. Go to the extracted folder
-2. You may have to give the script executable permission ( ***MacOS*** and ***Linux*** )
-3. Double click the script to run it
-
-
 # Run using CLI
 In your favorite shell, cd to the extracted folder and run the command:
 ```
