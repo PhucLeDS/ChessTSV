@@ -11,9 +11,6 @@ Here is our [Report](https://docs.google.com/document/d/1QzTgx2QGF_m4gBtAkok-nsf
 Download the latest release and extract it, which contains 3 things:
 * Resources
 * ChessTSV.jar
-* Executable scripts:
-    * RunPvZ.cmd ( ***Windows*** ) 
-    * RunPvZ.sh ( ***MacOS*** and ***Linux*** ) 
 
 # Run using executable script:
 1. Go to the extracted folder
